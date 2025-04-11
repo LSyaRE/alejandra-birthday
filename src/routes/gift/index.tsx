@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { routeLoader$, type DocumentHead } from "@builder.io/qwik-city";
 import { GlassCard } from "~/components/glass-card/glass-card";
-import { CountdownTimer } from "~/components/timer/timer";
 import { GetBirthday } from "~/services/get-birthday";
 
 const fetchBirthday = new GetBirthday();
@@ -11,7 +10,7 @@ const birthdayTitle = !fetchBirthday.isBirthday()
 
 export const useCheckBirthday = routeLoader$((context) => {
   const data = new GetBirthday(); // o cualquier lógica tuya
-  const { cookie, redirect } = context; // Destructure from the single object
+  const { redirect } = context; // Destructure from the single object
 
   if (!data.isBirthday()) {
     throw redirect(302, "/");

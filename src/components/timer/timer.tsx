@@ -1,5 +1,4 @@
 import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
-import { get } from 'http';
 import { GetBirthday } from '~/services/get-birthday';
 
 function getBirthday() {

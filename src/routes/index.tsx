@@ -47,6 +47,4 @@ export const head: DocumentHead = {
     },
   ],
 };
-function nav(arg0: string) {
-  throw new Error("Function not implemented.");
-}
+
