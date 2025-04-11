@@ -13,7 +13,7 @@ export class GetBirthday {
 
     private fetchBirthday(): Date {
         // Simulate fetching birthday from an API or database
-        return new Date("2010-04-12T00:00:00");
+        return new Date("2010-04-18T00:00:00");
     }
     
     private fetchNextBirthday(): Date {
