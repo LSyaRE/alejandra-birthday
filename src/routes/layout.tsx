@@ -1,6 +1,9 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
+import { routeLoader$ } from "@builder.io/qwik-city";
+import { GetBirthday } from "~/services/get-birthday";
+
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
   // https://qwik.dev/docs/caching/
@@ -12,6 +15,27 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
   });
 };
 
+const fetchBirthday = new GetBirthday();
+
 export default component$(() => {
-  return <Slot />;
+  return (
+    <>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          gap: "1rem",
+          alignItems: "center",
+          height: "100vh",
+          backgroundImage: "url('/assets/img/hastsunemikunobirth.svg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: !fetchBirthday.isBirthday() ? "#137a7f" : "#86cecb",
+        }}
+      >
+        <Slot />
+      </div>
+    </>
+  );
 });
