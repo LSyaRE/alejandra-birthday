@@ -7,7 +7,7 @@
         "@builder.io/qwik": "^1.13.0",
         "@builder.io/qwik-city": "^1.13.0",
         "@netlify/edge-functions": "^2.0.0",
-        "@types/eslint": "8.56.10",
+        "@types/eslint": "8.56.12",
         "@types/node": "20.14.11",
         "@typescript-eslint/eslint-plugin": "7.16.1",
         "@typescript-eslint/parser": "7.16.1",
@@ -467,7 +467,7 @@
 
     "@types/debug": ["@types/debug@4.1.12", "", { "dependencies": { "@types/ms": "*" } }, "sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ=="],
 
-    "@types/eslint": ["@types/eslint@8.56.10", "", { "dependencies": { "@types/estree": "*", "@types/json-schema": "*" } }, "sha512-Shavhk87gCtY2fhXDctcfS3e6FdxWkCx1iUZ9eEUbh7rTqlZT0/IzOkCOVt0fCjcFuZ9FPYfuezTBImfHCDBGQ=="],
+    "@types/eslint": ["@types/eslint@8.56.12", "", { "dependencies": { "@types/estree": "*", "@types/json-schema": "*" } }, "sha512-03ruubjWyOHlmljCVoxSuNDdmfZDzsrrz0P2LeJsOXr+ZwFQ+0yQIwNCwt/GYhV7Z31fgtXJTAEs+FYlEL851g=="],
 
     "@types/estree": ["@types/estree@1.0.7", "", {}, "sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ=="],
 
