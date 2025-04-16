@@ -4,11 +4,10 @@ import { GlassButton } from "~/components/buttons/glass/glass-button";
 import { GlassCard } from "~/components/glass-card/glass-card";
 import { CountdownTimer } from "~/components/timer/timer";
 import { GetBirthday } from "~/services/get-birthday";
+import { getBirthdayTitle } from "~/utils/birthday-fetching";
 
 const fetchBirthday = new GetBirthday();
-const birthdayTitle = fetchBirthday.isBirthday()
-  ? "¡Feliz Cumpleaños!"
-  : "¡Hola Alejandra!";
+ const title = getBirthdayTitle();
 
 export default component$(() => {
   const nav = useNavigate();
@@ -21,7 +20,7 @@ export default component$(() => {
     <>
       <GlassCard>
         <h1 style={{ marginBottom: "1.5rem", fontSize: "2.5rem" }}>
-          {birthdayTitle}
+          {title}
         </h1>
         <CountdownTimer />
         {fetchBirthday.isBirthday() && (
@@ -38,10 +37,10 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: birthdayTitle,
+  title,
   meta: [
     {
-      name: birthdayTitle,
+      name: title,
       content:
         "Blog que sirve para felicitar el cumpleaños de Alejandra Quinchuqi",
     },

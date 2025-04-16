@@ -1,11 +1,12 @@
-import { component$, PropFunction, Slot } from "@builder.io/qwik";
+import { component$, Slot } from "@builder.io/qwik";
 import "./glass-button.css";
+import type { PropFunction } from "@builder.io/qwik";
 
-interface GlassButtonProps {
+interface ButtonProps {
   onClick: PropFunction<() => void>;
 }
 
-export const GlassButton = component$<GlassButtonProps>(({ onClick }) => {
+export const GlassButton = component$<ButtonProps>(({ onClick }) => {
   return (
     <button class="button-glass" onClick$={onClick}>
       <Slot />
