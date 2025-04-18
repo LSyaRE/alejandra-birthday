@@ -27,10 +27,11 @@ export default component$(() => {
           gap: "1rem",
           alignItems: "center",
           height: "100vh",
-          backgroundImage: "url('/assets/img/hastsunemikunobirth.svg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
           backgroundColor: !fetchBirthday.isBirthday() ? "#137a7f" : "#86cecb",
+          backgroundImage: fetchBirthday.isBirthday() ? "url('/assets/img/bgbirth.webp')" : "url('/assets/img/hastsunemikunobirth.svg')",
+          // backgroundImage: "url('/assets/img/hastsunemikunobirth.svg')",
+          backgroundSize: fetchBirthday.isBirthday() ? "" : "cover" ,
+          backgroundPosition: "center",
         }}
       >
         <Slot />
