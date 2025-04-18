@@ -1,3 +1,5 @@
+import { messagesFifteenBirthday } from "~/consts/messages-birthday";
+
 export class GetBirthday {
     private _birthday: Date;
     private _nextBirthday: Date;
@@ -25,6 +27,8 @@ export class GetBirthday {
         if(today.getDate() > actualYear.getDate() && today.getMonth() >= actualYear.getMonth()){
             actualYear.setFullYear(today.getFullYear() + 1);
         }
+
+        
         
         return actualYear;
     }
@@ -37,6 +41,11 @@ export class GetBirthday {
         if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
             age--;
         }
+
+        if (age == 15) {
+            return messagesFifteenBirthday[Math.floor(Math.random() * messagesFifteenBirthday.length)];
+        } 
+        
         return `¡Feliz cumpleaños! Tienes ${age} años.`;
     }
 
