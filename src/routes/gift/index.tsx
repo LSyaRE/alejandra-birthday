@@ -75,14 +75,14 @@ export default component$(() => {
         </div>
       </GlassCard>
 
-      <GlassCard>
+      {/* <GlassCard>
         <h1 style={{ marginBottom: "1.5rem", fontSize: "2.5rem" }}>
           Versiculo Biblico
         </h1>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
           Aca va el versiculo biblico
         </div>
-      </GlassCard>
+      </GlassCard> */}
     </>
   );
 });
