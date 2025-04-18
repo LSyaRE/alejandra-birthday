@@ -1,7 +1,6 @@
 import { $, component$, useSignal } from "@builder.io/qwik";
 import {
   routeLoader$,
-  useNavigate,
   type DocumentHead,
 } from "@builder.io/qwik-city";
 import { GlassButton } from "~/components/buttons/glass/glass-button";
@@ -26,17 +25,14 @@ export const useCheckBirthday = routeLoader$((context) => {
 
 export default component$(() => {
   useCheckBirthday(); // Llama a la función para verificar el cumpleaños
-  const nav = useNavigate();
   const giftTitle = useSignal("Ninguno");
   const giftDescription = useSignal("No se ha seleccionado ningun elemento");
   const keyWord = useSignal("");
   const giftDescription2 = useSignal('');
 
 
-  let selectedGift = "none"; // Valor por defecto
 
   const selectRoblox = $(() => {
-    selectedGift = "roblox";
     giftTitle.value = "Roblox";
     giftDescription.value = "Recarga de 10 dolares para Roblox mandandome un mensaje por whatsapp con la palabra clave:";
     keyWord.value = "roblox1234";
@@ -44,7 +40,6 @@ export default component$(() => {
   });
 
   const selectRecarga = $(() => {
-    selectedGift = "recarga";
     giftTitle.value = "Recarga";
     giftDescription.value = "Recarga de 10 dolares para el celular mandandome un mensaje por whatsapp con la palabra clave:";
     keyWord.value = "recarga1584";
@@ -52,7 +47,6 @@ export default component$(() => {
   });
 
   const selectOtro = $(() => {
-    selectedGift = "otro";
     giftTitle.value = "Otro";
     giftDescription.value = "Mandame un mensaje por whatsapp con la palabra clave:";
     keyWord.value = "otro";
