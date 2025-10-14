@@ -66,7 +66,7 @@ module.exports = defineConfig([{
         "@typescript-eslint/no-unused-vars": ["error"],
         "@typescript-eslint/consistent-type-imports": "warn",
         "@typescript-eslint/no-unnecessary-condition": "warn",
-        'qwik/no-use-visible-task': 'off',
+        'qwik/no-use-visible-task': 'warn',
         '@typescript-eslint/no-empty-object-type': 'off',
     },
 }, globalIgnores([

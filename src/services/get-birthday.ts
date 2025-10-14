@@ -24,21 +24,20 @@ export class GetBirthday {
         actualYear.setDate(this._birthday.getDate());
         actualYear.setMonth(this._birthday.getMonth());
 
-        if(today.getDate() > actualYear.getDate() && today.getMonth() >= actualYear.getMonth()){
+        if(today.getDate() < actualYear.getDate() && today.getMonth() > actualYear.getMonth()){
             actualYear.setFullYear(today.getFullYear() + 1);
         }
+        actualYear.setHours(0, 0, 0, 0); 
 
-        
-        
         return actualYear;
     }
 
     public getBirthdayMessage(): string {
-        const today = new Date();
+        const nextBirthday = new Date();
         const birthday = this._birthday;
-        let age = today.getFullYear() - birthday.getFullYear();
-        const monthDiff = today.getMonth() - birthday.getMonth();
-        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthday.getDate())) {
+        let age = nextBirthday.getFullYear() - birthday.getFullYear();
+        const monthDiff = nextBirthday.getMonth() - birthday.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && nextBirthday.getDate() < birthday.getDate())) {
             age--;
         }
 
