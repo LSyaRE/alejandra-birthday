@@ -28,7 +28,7 @@
     "@builder.io/qwik-city": "^1.13.0",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.37.0",
-    "@netlify/edge-functions": "^2.0.0",
+    "@netlify/edge-functions": "^3.0.0",
     "@types/eslint": "9.6.1",
     "@types/node": "24.7.2",
     "@typescript-eslint/eslint-plugin": "8.46.1",
