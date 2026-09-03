@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "my-qwik-empty-starter",
@@ -8,7 +9,7 @@
         "@builder.io/qwik-city": "^1.13.0",
         "@eslint/eslintrc": "^3.3.1",
         "@eslint/js": "^9.37.0",
-        "@netlify/edge-functions": "^2.0.0",
+        "@netlify/edge-functions": "^4.0.0",
         "@types/eslint": "9.6.1",
         "@types/node": "24.7.2",
         "@typescript-eslint/eslint-plugin": "8.46.1",
@@ -248,7 +249,7 @@
 
     "@netlify/edge-bundler": ["@netlify/edge-bundler@14.5.6", "", { "dependencies": { "@import-maps/resolve": "^2.0.0", "ajv": "^8.11.2", "ajv-errors": "^3.0.0", "better-ajv-errors": "^1.2.0", "common-path-prefix": "^3.0.0", "env-paths": "^3.0.0", "esbuild": "0.25.10", "execa": "^8.0.0", "find-up": "^7.0.0", "get-port": "^7.0.0", "node-stream-zip": "^1.15.0", "p-retry": "^6.0.0", "p-wait-for": "^5.0.0", "parse-imports": "^2.2.1", "path-key": "^4.0.0", "semver": "^7.3.8", "tar": "^7.4.3", "tmp-promise": "^3.0.3", "urlpattern-polyfill": "8.0.2", "uuid": "^11.0.0" } }, "sha512-00uOZIOFsoWKa04osBvQ763oAFZDtAGSIjlywU0TS/lZTQCVEs6k39yJz8v4UEhXvK5MCThiFv+tnlpTNJn3fQ=="],
 
-    "@netlify/edge-functions": ["@netlify/edge-functions@2.11.1", "", {}, "sha512-pyQOTZ8a+ge5lZlE+H/UAHyuqQqtL5gE0pXrHT9mOykr3YQqnkB2hZMtx12odatZ87gHg4EA+UPyMZUbLfnXvw=="],
+    "@netlify/edge-functions": ["@netlify/edge-functions@4.0.0", "", { "dependencies": { "@netlify/types": "3.0.0" } }, "sha512-0jerPQQ5mLczl7jwCRfTJsLcaiXbvPOC+Whtxxk7IHdz24OvZGjUtVHAxhppjT8wcX48I7C6oAff04QdQDMTfw=="],
 
     "@netlify/edge-functions-bootstrap": ["@netlify/edge-functions-bootstrap@2.17.1", "", {}, "sha512-KyNJbDhK1rC5wEeI7bXPgfl8QvADMHqNy2nwNJG60EHVRXTF0zxFnOpt/p0m2C512gcMXRrKZxaOZQ032RHVbw=="],
 
@@ -298,7 +299,7 @@
 
     "@netlify/serverless-functions-api": ["@netlify/serverless-functions-api@2.6.0", "", {}, "sha512-/m4HO0MNb7nBsHWKQ7JTeTZ3jDZpfQxs0LOn9h/+aPzGcdYW7DwKNudGq8NXYY5NPtRE3C+8qtr3xLfN9VOU6g=="],
 
-    "@netlify/types": ["@netlify/types@2.0.3", "", {}, "sha512-OcV8ivKTdsyANqVSQzbusOA7FVtE9s6zwxNCGR/aNnQaVxMUgm93UzKgfR7cZ1nnQNZHAbjd0dKJKaAUqrzbMw=="],
+    "@netlify/types": ["@netlify/types@3.0.0", "", {}, "sha512-zRCidsQgI4CZWrZB/kmwdPf0QbSNljakfNSLizFvrsSA3UcUrTWSBNMVKmZnob92/8ESeUN0ewXLOlffJU+ATQ=="],
 
     "@netlify/zip-it-and-ship-it": ["@netlify/zip-it-and-ship-it@14.1.8", "", { "dependencies": { "@babel/parser": "^7.22.5", "@babel/types": "7.28.4", "@netlify/binary-info": "^1.0.0", "@netlify/serverless-functions-api": "^2.5.0", "@vercel/nft": "0.29.4", "archiver": "^7.0.0", "common-path-prefix": "^3.0.0", "copy-file": "^11.0.0", "es-module-lexer": "^1.0.0", "esbuild": "0.25.10", "execa": "^8.0.0", "fast-glob": "^3.3.3", "filter-obj": "^6.0.0", "find-up": "^7.0.0", "is-path-inside": "^4.0.0", "junk": "^4.0.0", "locate-path": "^7.0.0", "merge-options": "^3.0.4", "minimatch": "^9.0.0", "normalize-path": "^3.0.0", "p-map": "^7.0.0", "path-exists": "^5.0.0", "precinct": "^12.0.0", "require-package-name": "^2.0.1", "resolve": "^2.0.0-next.1", "semver": "^7.3.8", "tmp-promise": "^3.0.2", "toml": "^3.0.0", "unixify": "^1.0.0", "urlpattern-polyfill": "8.0.2", "yargs": "^17.0.0", "zod": "^3.23.8" }, "bin": { "zip-it-and-ship-it": "./bin.js" } }, "sha512-APPNgGUAb1kSe4e9KxhRAeQIPGx8EAfwZ3S61eGyZXXGXgjnKmC2Ho7jsFnLsElbt8Ailyzmi/wAjh0NHZjGjA=="],
 
@@ -2891,6 +2892,8 @@
     "multiparty/http-errors/statuses": ["statuses@1.5.0", "", {}, "sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA=="],
 
     "netlify-cli/@netlify/edge-functions/@netlify/edge-functions-bootstrap": ["@netlify/edge-functions-bootstrap@2.16.0", "", {}, "sha512-v8QQihSbBHj3JxtJsHoepXALpNumD9M7egHoc8z62FYl5it34dWczkaJoFFopEyhiBVKi4K/n0ZYpdzwfujd6g=="],
+
+    "netlify-cli/@netlify/edge-functions/@netlify/types": ["@netlify/types@2.0.3", "", {}, "sha512-OcV8ivKTdsyANqVSQzbusOA7FVtE9s6zwxNCGR/aNnQaVxMUgm93UzKgfR7cZ1nnQNZHAbjd0dKJKaAUqrzbMw=="],
 
     "netlify-cli/@netlify/edge-functions/get-port": ["get-port@7.1.0", "", {}, "sha512-QB9NKEeDg3xxVwCCwJQ9+xycaz6pBB6iQ76wiWMl1927n0Kir6alPiP+yuiICLLU4jpMe08dXfpebuQppFA2zw=="],
 
